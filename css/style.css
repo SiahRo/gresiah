@@ -20,6 +20,12 @@
   font-style: normal;
 
 }
+--heading-1 {
+  font-family: 'luxus_brut_sparklingregular';
+}
+--heading-2 {
+  font-family: 'webfontregular'
+}
 /*
  * -- BASE STYLES --
  * Most of these are inherited from Base, but I want to change a few.
@@ -109,17 +115,18 @@ a.pure-button-primary {
  .custom-wrapper {
         position: fixed;
         width: 100%;
-         background-color: black;
-         margin-bottom: 1em;
-         -webkit-font-smoothing: antialiased;
-         height: 4em;
-         overflow: hidden;
-         -webkit-transition: height 0.5s;
-         -moz-transition: height 0.5s;
-         -ms-transition: height 0.5s;
-         transition: height 0.5s;
-         color: white;
-         z-index: 3;
+        background-color: black;
+        margin-bottom: 1em;
+        -webkit-font-smoothing: antialiased;
+        padding-top: 1em;
+        height: 5em;
+        overflow: hidden;
+        -webkit-transition: height 0.5s;
+        -moz-transition: height 0.5s;
+        -ms-transition: height 0.5s;
+        transition: height 0.5s;
+        color: white;
+        z-index: 3;
        }
 
        .custom-wrapper a.pure-menu-link {
@@ -197,14 +204,17 @@ a.pure-button-primary {
 
 a#brand {
   font-family: 'luxus_brut_sparklingregular';
-  font-weight: bold;
+  font-weight: normal;
   text-transform: capitalize;
-  font-size: 250%;
-  color: white;
+  font-size: 285%;
+  color: #DAA520;
+  text-shadow: 0px 0px 6px rgba(255,255,255,1);
+
 }
 
 a.pure-menu-link {
   color: white;
+  font-family:
 }
 
 
@@ -230,6 +240,7 @@ a.pure-menu-link {
 
 .splash {
     /* absolute center .splash within .splash-container */
+
     width: 80%;
     height: 80%;
     margin: auto;
@@ -237,6 +248,7 @@ a.pure-menu-link {
     top: 500px; left: 0; bottom: 0; right: 0;
     text-align: center;
     text-transform: uppercase;
+    color: white;
 }
 
 /* This is the main heading that appears on the blue section */
@@ -244,20 +256,29 @@ a.pure-menu-link {
 #prefix {
     font-family: 'luxus_brut_sparklingregular';
     text-transform: capitalize;
+    text-shadow: 0px 0px 6px rgba(255,255,255,1);
     color: white;
-    font-weight: 500;
-    font-size: 300%;
+    font-size: 400%;
     padding-top: 5%;
     padding-bottom: 5%;
     margin: 0;
 }
+
+#suffix {
+    font-family: 'webfontregular';
+    text-shadow: 0px 0px 6px rgba(255,255,255,1);
+    color: white;
+
+}
+
 .splash-head {
     font-family: 'webfontregular';
     margin: 0 20% 0 20%;
     font-size: 200%;
     font-weight: bold;
-    color: white;
-    border: 3px solid white;
+    color: #DAA520;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
     padding: 1em 1.6em;
     font-weight: 100;
     border-radius: 5px;
@@ -269,7 +290,6 @@ a.pure-menu-link {
 .splash-subhead {
     color: white;
     letter-spacing: 0.05em;
-    opacity: 0.8;
 }
 
 /*
@@ -386,6 +406,8 @@ a.pure-menu-link {
     .splash {
         width: 50%;
         height: 50%;
+        top: 50%; left: 40%; bottom: 0; right: 0;
+
     }
 
     .splash-head {
