@@ -266,7 +266,7 @@ a.pure-menu-link:hover {
     text-transform: none;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     color: white;
-    font-size: 400%;
+    font-size: 200%;
     padding-top: 5%;
     padding-bottom: 5%;
     margin: 0;
@@ -275,6 +275,7 @@ a.pure-menu-link:hover {
 #suffix {
     font-family: 'webfontregular';
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    font-size: 100%
     color: white;
 
 }
@@ -298,7 +299,6 @@ a.pure-menu-link:hover {
 .splash-subhead {
     color: white;
     letter-spacing: 0.05em;
-    font-size: 150%;
 }
 
 /*
@@ -458,6 +458,14 @@ h1.content-head.content-head-ribbon, h2.content-head.content-head-ribbon {
     }
     .splash-head {
         font-size: 200%;
+    }
+
+    #prefix {
+      font-size: 400%;
+    }
+
+    #suffix {
+      font-size: 150%;
     }
 
     .splah-subhead {
