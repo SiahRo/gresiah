@@ -41,7 +41,7 @@ h4,
 h5,
 h6,
 label {
-    color: #34495e;
+    color: #DAA520;
 }
 
 .pure-img-responsive {
@@ -131,6 +131,7 @@ a.pure-button-primary {
          font-family: 'webfontregular';
        }
 
+
        .custom-wrapper.open {
            height: 22em;
        }
@@ -215,14 +216,14 @@ a.pure-menu-link {
   font-family: 'webfontregular';
   font-size: 120%;
   text-transform: capitalize;
+  font-weight: bold;
+  padding-top: 14px;
 
 }
 
-a.pure-menu-link:hover {
-  color:#DAA520;
-  background-color: none !important;
-  text-decoration: none;
-  border-top: 3px;
+.pure-menu-active>.pure-menu-link, .pure-menu-link:focus, .pure-menu-link:hover {
+    background-color: transparent;
+    color: #8c0909;
 }
 
 
@@ -325,10 +326,9 @@ a.pure-menu-link:hover {
 .content-head {
     font-family: 'luxus_brut_sparklingregular';
     font-size: 300%;
-    font-weight: bold;
     text-transform: capitalize;
-    letter-spacing: 0.1em;
     margin: 2em 0 1em;
+    font-weight: normal;
 }
 
 /* This is a modifier class used when the content-head is inside a ribbon */
@@ -344,7 +344,7 @@ a.pure-menu-link:hover {
 }
 
 #ourstory {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #story-pic, #story-text h3 p {
@@ -367,19 +367,18 @@ a.pure-menu-link:hover {
     height: 400px;
 }
 
+.party-pic {
+  text-align: center;
+}
+
+.party-text {
+  text-align: left;
+}
+
 h1.content-head.content-head-ribbon, h2.content-head.content-head-ribbon {
   font-size: 300%;
   text-transform: none;
 }
-
-/* This is the class used for the footer */
-.footer {
-    background: #111;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
 
 @media (min-width: 35.5em) {
 
@@ -445,6 +444,10 @@ h1.content-head.content-head-ribbon, h2.content-head.content-head-ribbon {
     }
 
 }
+
+    #story-pic, #story-text {
+      width: 100%;
+    }
 
 /*
  * -- DESKTOP (AND UP) MEDIA QUERIES --
