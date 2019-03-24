@@ -282,10 +282,10 @@ a.pure-menu-link {
 }
 
 .splash-head {
+    background-color: rgba(236, 236, 236, 0.4);
     font-family: 'webfontregular';
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     margin: 0 20% 0 20%;
-    font-size: 200%;
     font-weight: bolder;
     color: #DAA520;
     border-top: 3px solid white;
@@ -427,10 +427,14 @@ h1.content-head.content-head-ribbon, h2.content-head.content-head-ribbon {
     /* We decrease the width of the .splash, since we have more width
     to work with */
     .splash {
-        width: 50%;
+        width: 40%;
         height: 50%;
         top: 50%; left: 40%; bottom: 0; right: 0;
 
+    }
+
+    #prefix {
+      font-size: 300%;
     }
 
     .splash-head {
