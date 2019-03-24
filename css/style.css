@@ -380,6 +380,12 @@ h1.content-head.content-head-ribbon, h2.content-head.content-head-ribbon {
   text-transform: none;
 }
 
+.l-box.pure-u-1.pure-u-md-2-5.pure-u-lg-2-5.party-pic img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50% !important;
+}
+
 @media (min-width: 35.5em) {
 
   .splash-container {
