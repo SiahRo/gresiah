@@ -379,6 +379,7 @@ a.pure-menu-link {
 
 #ribbon3 {
   background-image: url("../img/IMG_0436.jpg");
+  background-position: center 70%;
 }
 .party-pic {
   text-align: center;
@@ -453,6 +454,10 @@ h1.content-head.content-head-ribbon, h2.content-head.content-head-ribbon {
 
 #story-splash h3 {
   text-align: center;
+}
+
+#registry {
+  min-height: 40vh;
 }
 
 
