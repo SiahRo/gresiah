@@ -417,6 +417,28 @@ h1.content-head.content-head-ribbon, h2.content-head.content-head-ribbon {
   border-radius: 5px;
 }
 
+#accomodations {
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+
+.hotel {
+
+  text-decoration: underline;
+  display: block;
+  color: #DAA520;
+  font-size: .8em;
+  font-weight: lighter;
+}
+
+.hotel-text {
+
+  display: block;
+  color: white;
+  font-size: .8em;
+  font-weight: lighter;
+}
+
 #story-splash {
   width: 80%;
   margin: auto;
