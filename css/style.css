@@ -385,6 +385,12 @@ a.pure-menu-link {
   text-align: left;
 }
 
+.party-name {
+  font-family: 'luxus_brut_sparklingregular';
+  font-size: 2em;
+  padding-left: 1em;
+}
+
 h1.content-head.content-head-ribbon, h2.content-head.content-head-ribbon {
   font-size: 300%;
   text-transform: none;
