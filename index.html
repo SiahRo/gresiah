@@ -3,27 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greg & Jesiah</title>
+    <title>Jesiah & Greg</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
-
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-    <!--<![endif]-->
-
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
 
-        <!--[if lte IE 8]>
-            <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
-        <![endif]-->
-        <!--[if gt IE 8]><!-->
-            <link rel="stylesheet" href="css/style.css">
-        <!--<![endif]-->
 </head>
 <body>
 
@@ -37,10 +29,10 @@
             <div class="pure-u-1 pure-u-md-1-3">
                 <div class="pure-menu pure-menu-horizontal custom-can-transform">
                     <ul class="pure-menu-list">
+                        <li class="pure-menu-item"><a href="#details" class="pure-menu-link">The Details</a></li>
                         <li class="pure-menu-item"><a href="#ourstory" class="pure-menu-link">Our Story</a></li>
-                        <li class="pure-menu-item"><a href="#theparty" class="pure-menu-link">Party</a></li>
-                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">The Details</a></li>
-                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Registry</a></li>
+                        <li class="pure-menu-item"><a href="#theparty" class="pure-menu-link">The Party</a></li>
+                        <li class="pure-menu-item"><a href="#registry" class="pure-menu-link">Registry</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,49 +47,6 @@
             </div>
     </div>
 
-    <script>
-      (function (window, document) {
-      var menu = document.getElementById('menu'),
-          WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
-
-      function toggleHorizontal() {
-          [].forEach.call(
-              document.getElementById('menu').querySelectorAll('.custom-can-transform'),
-              function(el){
-                  el.classList.toggle('pure-menu-horizontal');
-              }
-          );
-      };
-
-      function toggleMenu() {
-          // set timeout so that the panel has a chance to roll up
-          // before the menu switches states
-          if (menu.classList.contains('open')) {
-              setTimeout(toggleHorizontal, 500);
-          }
-          else {
-              toggleHorizontal();
-          }
-          menu.classList.toggle('open');
-          document.getElementById('toggle').classList.toggle('x');
-      };
-
-      function closeMenu() {
-          if (menu.classList.contains('open')) {
-              toggleMenu();
-          }
-      }
-
-      document.getElementById('toggle').addEventListener('click', function (e) {
-          toggleMenu();
-          e.preventDefault();
-      });
-
-      window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
-      })(this, this.document);
-
-      </script>
-
 <div class="splash-container">
     <div class="splash">
         <p class="splash-subhead" id="prefix">Meet the Priscos</p>
@@ -109,138 +58,230 @@
 </div>
 
 <div class="content-wrapper">
+
+
+        <div class="content" id="details">
+            <h2 class="content-head is-center">The Details</h2>
+              <div class="pure-g">
+                  <div class="l-box pure-u-1 pure-u-md-1-1 pure-u-lg-1-2" id="details-pic">
+                  <img class="pure-img"  src="img\IMG_0329.jpg" alt="">
+
+
+                  </div>
+                  <div class="l-box pure-u-1 pure-u-md-1-1 pure-u-lg-1-2" id="details-text">
+                    <div id="details-splash">
+                      <h3 class="content-subhead">
+                          The Ceremony
+                      </h3>
+                      <h4>
+                        Congress Park, Saratoga Springs New York
+                      </h4>
+
+                      <h3 class="content-subhead">
+                        The Reception
+                      </h3>
+                      <h4>
+                        Embassy Suites, Saratoga Springs New York
+                      </h4>
+
+                      <h4 id="accomodations">Accommodations</h4>
+                      <a class="hotel" href="https://embassysuites.hilton.com/en/es/groups/personalized/A/ALBESES-RPW-20191018/index.jhtml?WT.mc_id=POG">Embassy Suites, Saratoga Springs</a>
+                      <span class="hotel-text">2 bedroom suites at reception venue</span>
+                      <a class="hotel" href="https://www.choicehotels.com/new-york/saratoga-springs/comfort-inn-hotels/ny372?mc=smgogouscil&cid=Search%7CComfort_Inn%7CUS%7CNew_York%7CExact%7CCPC%7CDesktop%7CEN%7CB_G&ag=US%7CNY%7CSaratoga%20Springs&pmf=GOOGLE&kw=comfort%20inn%20and%20suites%20saratoga%20springs%20ny&gclid=Cj0KCQjws5HlBRDIARIsAOomqA3NPAabWFBta4bu5-GBSWSlR-HAS_4wAwf2KRYgCAGlaEIaJ4tyP3YaArPDEALw_wcB&gclsrc=aw.ds">Comfort Inn & Suites, Saratoga Springs </a>
+                      <span class="hotel-text">10 min shuttle ride - lower cost option off exit 15</span>
+                    </div>
+
+                  </div>
+              </div>
+        </div>
+
+    <div id="ribbon1" class="ribbon l-box-lrg pure-g">
+
+    </div>
+
+
     <div class="content" id="ourstory">
         <h2 class="content-head is-center">Our Story</h2>
 
         <div class="pure-g">
+<<<<<<< HEAD
             <div class="l-box pure-u-1 pure-u-md-1-1 pure-u-lg-1-2" id="story-pic">
               <img class="pure-img-responsive" src="img/IMG_0078.jpg" alt="">
             </div>
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2" id="story-text">
-                <h3 class="content-subhead">
-                    How We Met
+                <h3 class="content-subhead" style="text-align:center;">
+                    Site under construction!
                 </h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p style="text-align:center;">
+                    Check back later for more updates!
                 </p>
 
-                <p>
+                <!-- <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p> -->
+
+=======
+
+            <div class="l-box pure-u-1" id="story-text">
+              <div id="story-splash">
+
+                <p>
+                  It was Fall of 2013. Greg had recently moved to Saratoga Springs to begin his new job at Glens Falls Hospital. His best friend Tom was up for the weekend and had convinced Greg to go downtown for a few drinks. Tom had left briefly to use the restroom when Jesiah swooped in and stole his barstool. Greg saw an opportunity - and bravely sparked conversation. "You're in my friends seat" he said. Those were the first words that started it all. Jesiah, intrigued by the audacious young man with great eyebrows, decided to stick around. This pivotal seat snatching moment led to conversations about work and life. The two hit it off fairly quickly and before long they had exchanged phone numbers.
                 </p>
 
+                <p>
+                  Fast forward to 2018, Greg and Jesiah had went from weird bar exchanges to life partners in crime. They've lived with each other for a whole 4 years co-parenting their adult cat Alejandro. In between normal adulthood they've enjoyed countless trips to almost everywhere in eastern New York and have hiked almost all of the easy Adirondack mountains. They've vacationed together to the Dominican Republic, Aruba, Canada and Florida. Somehow, in 2018 Jesiah managed to convince Greg to take his first longhaul flight to Italy. In a small town along the Sorrento Coast with Mt. Vesuvious in view, Greg revealed a shiny rock he had been concealing the entire trip and asked Jesiah, "Will you marry me?" Jesiah laughed, then cried and said yes!
+                </p>
+              </div>
+>>>>>>> under-construction
             </div>
         </div>
     </div>
 
-    <div class="ribbon l-box-lrg pure-g">
+<<<<<<< HEAD
+<!-- ribbon -->
+
+
+
+    <!-- <div class="ribbon l-box-lrg pure-g">
+=======
+    <div id="ribbon2" class="ribbon l-box-lrg pure-g">
+>>>>>>> under-construction
         <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
 
-            <h2 class="content-head content-head-ribbon">At last my love has come along, my lonely days are over and life is like a song.</h>
-            <h1 class="content head content-head-ribbon"> - Etta James </h1>
-        </div>
-    </div>
 
-    <div class="content" id="theparty">
+        </div>
+    </div> -->
+
+<!-- the party section  -->
+
+
+    <!-- <div class="content" id="theparty">
         <h2 class="content-head is-center">The Party</h2>
 
-        <div class="pure-g">
+        <div class="pure-g party-section">
             <div class="l-box pure-u-1 pure-u-md-2-5 pure-u-lg-2-5 party-pic" id="party-jevon-pic">
-              <h3>Maid of Honor</h3>
-              image
+              <img src="img/jevon.jpg">
 
             </div>
             <div class="l-box pure-u-1 pure-u-md-3-5 pure-u-lg-3-5 party-text" id="party-jevon-text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <h3>Maid of Honor: <span class="party-name">Jevon Roche</h3>
+              <p>The role Jevon has been anticipating for 30 years has finally come - Maid of Honor. Jevon cannot wait to tend to her little sister's beck and call. It's been a long wait but she's well prepared for the job. As an Art Director in NYC, Jevon is used to successfully rallying the troops. She also has invaluable experience being an elder sister for almost her entire life. At 6 years old - Jevon's life was change forever when her coveted position as "Only Child" ended ubruptly and little Jesiah entered the world. Enter Jevin shortly after and you have what is known as "Those Roche Kids". Throughout it all Jevon has been the leader of the pack, deftly showing us the way and dealing with her little siblings' antics.   </p>
 
             </div>
         </div>
 
-        <div class="pure-g">
+        <div class="pure-g party-section">
             <div class="l-box pure-u-1 pure-u-md-2-5 pure-u-lg-2-5 party-pic" id="party-melissa-pic">
-              <h3>Bridesmaid</h3>
-              image
+              <img src="img/melissa (3).jpg" alt="">
 
             </div>
             <div class="l-box pure-u-1 pure-u-md-3-5 pure-u-lg-3-5 party-text" id="party-melissa-text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <h3>Bridesmaid: <span class="party-name">Melissa Prisco</h3>
+              <p>Melissa is literally the sweetest little sister a person can have. Easy going, thoughtful and fun - Melissa is always there when you need her. Greg and Melissa, despite being two "Only Childs", share an incredible relationship. One might look onto their relationship and wonder, "How could it be that two siblings get along so great?". However, behind the facade lies the normal antics of siblinghood. Greg loves to tell the story of "The Seatbelt" and don't get Melissa started about "Batting Practice". Not to mention Melissa is a talented gymnast (and also the strongest sibling). As an elementary school teacher, Melissa surely has the skills needed to deal with this "adult" Bridal Party.   </p>
 
             </div>
         </div>
 
-        <div class="pure-g">
+        <div class="pure-g party-section">
             <div class="l-box pure-u-1 pure-u-md-2-5 pure-u-lg-2-5 party-pic" id="party-casey-pic">
-              <h3>Bridesmaid</h3>
-              image
+
+              <img src="img/casey.jpg" alt="">
 
             </div>
             <div class="l-box pure-u-1 pure-u-md-3-5 pure-u-lg-3-5 party-text" id="party-casey-text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <h3>Bridesmaid: <span class="party-name">Casey Murphy</h3>
+              <p>Mother to Reia and life parter to Jevin - Case face has been a longtime member of the Roche clan. She was there for graduations, birthdays, weddings and holidays. You can count on her to be the reliable rock of the family (not to mention she makes an incredible buffalo chicken dip). Even with a Roche kid of her own - she has graciously agreed to tend to the elder middle Roche on the most important day of her life. Sweet, caring and attentive, Case face will be an invaluable bridesmaid when she's not running around after the little Roche below.     </p>
 
             </div>
         </div>
 
-        <div class="pure-g">
+        <div class="pure-g party-section">
             <div class="l-box pure-u-1 pure-u-md-2-5 pure-u-lg-2-5 party-pic" id="party-reia-pic">
-              <h3>Flower Girl</h3>
-              image
+
+              <img src="img/reia.jpg" alt="">
 
             </div>
             <div class="l-box pure-u-1 pure-u-md-3-5 pure-u-lg-3-5 party-text" id="party-reia-text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <h3>Flower Girl: <span class="party-name">Reia Roche</h3>
+              <p>Reia - AKA Rae Bae is Jesiah's beautiful first niece. Titi Jesiah can think of so many wonderful things to say about her. She is a smart, funny and rambunctious toddler. Reia loves gymnastics (like her Aunt Mel!) and can sing any disney song you throw her way. Her favorite movie is "Moana", favorite show is "Sophia the First". In her spare time she enjoys being a princess, going to the playground and visiting her grandma. Reia is excited to have the important job of Flower Girl for Titi "Siah" and Tio "Geg"! </p>
 
             </div>
         </div>
 
-        <div class="pure-g">
+        <div class="pure-g party-section">
             <div class="l-box pure-u-1 pure-u-md-2-5 pure-u-lg-2-5 party-pic" id="party-anthony-pic">
-              <h3>Best Man</h3>
-              image
+
+              <img src="img/anthony.jpg" alt="">
 
             </div>
             <div class="l-box pure-u-1 pure-u-md-3-5 pure-u-lg-3-5 party-text" id="party-anthony-text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <h3>Best Man: <span class="party-name">Anthony Politi</h3>
+              <p>Best friends since the 5th grade, Greg and Anthony have been mistaken for biological brothers for over two decades. They've gone through long hair, baggy UFO pants and all the other teenage phases together. Leader of the Old Bridge wolf pack, Anthony can be counted on to execute the incredibly important task of getting the groom to the alter in one piece (no promises on timing though). Anthony will most likely bring his business acumen and arsenal of spreadsheets to accomplish this task.   </p>
 
             </div>
         </div>
 
-        <div class="pure-g">
+        <div class="pure-g party-section">
             <div class="l-box pure-u-1 pure-u-md-2-5 pure-u-lg-2-5 party-pic" id="party-tom-pic">
-              <h3>Groomsmen</h3>
-              image
 
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-3-5 pure-u-lg-3-5 party-text" id="party-tom-text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            </div>
-        </div>
-
-        <div class="pure-g">
-            <div class="l-box pure-u-1 pure-u-md-2-5 pure-u-lg-2-5 party-pic" id="party-dan-pic">
-              <h3>Groomsmen</h3>
-              image
+              <img src="img/dan.jpg" alt="">
 
             </div>
             <div class="l-box pure-u-1 pure-u-md-3-5 pure-u-lg-3-5 party-text" id="party-dan-text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h3>Groomsmen: <span class="party-name">Dan Usher</h3>
+              <p>Dan has been one of Greg's best friends since middle school. Always reliable, Dan didn't hesitate to SUIT UP! to be Greg's groomsmen.  Greg will always look fondly back on their weekly Chick-Fil-A dates in Philly, although cut tragically short when Dan finished his engineering degree. The two geeks of the bunch, Dan is always willing to widthstand Greg's nerdy and exhuastive tangents slightly longer than the rest of the bunch before recommending he, "have another drink." </p>
 
             </div>
         </div>
 
-        <div class="pure-g">
+        <div class="pure-g party-section">
+            <div class="l-box pure-u-1 pure-u-md-2-5 pure-u-lg-2-5 party-pic" id="party-tom-pic">
+
+              <img src="img/tom.jpg" alt="">
+
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-3-5 pure-u-lg-3-5 party-text" id="party-tom-text">
+              <h3>Groomsmen: <span class="party-name">Tom Villiers</h3>
+              <p>The man you can thank for why you're reading this. If Tom didn't have to tinkle that night at the bar - Greg and Jesiah may have never met. Quiet, yet the life of the party, Tom is always down for a good time. When Greg was living in Saratoga by himself Tom reached out and made the journey up to keep him company. A good friend down for good times, Tom might be the reason Greg is late to the alter.  </p>
+            </div>
+        </div>
+
+        <div class="pure-g party-section">
             <div class="l-box pure-u-1 pure-u-md-2-5 pure-u-lg-2-5 party-pic" id="party-jevin-pic">
-              <h3>Groomsmen</h3>
-              image
+              <img src="img/jevin.jpg" alt="">
 
             </div>
             <div class="l-box pure-u-1 pure-u-md-3-5 pure-u-lg-3-5 party-text" id="party-jevin-text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <h3>Groomsen: <span class="party-name">Jevin Roche</h3>
+              <p>The last of Roche clan, Jevin is Jesiah and Jevon's little brother but don't let that fool you. Quiet he is not.  You might see him at the wedding getting the party started and keeping the festivities moving. In the early days people would mistake Jevin and Jesiah as twins. Later on Jesiah's  other name in high school was 'Jevin's Sister'. As popular as he may be, you can count on Jevin to be there, hence why he was quick to accept the position of groomsmen. When he's not chasing the flower girl you might find him in the middle of the dance floor.    </p>
 
             </div>
         </div>
 
+<<<<<<< HEAD
         <div class="ribbon l-box-lrg pure-g">
             <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+=======
+    </div> -->
+
+<<<<<<< HEAD
+    <!-- contact form -->
+
+    <!-- <div class="content">
+        <h2 class="content-head is-center">Dolore magna aliqua. Uis aute irure.</h2> -->
+
+
+
+
+        <!-- <div class="pure-g">
+            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+                <form class="pure-form pure-form-stacked">
+                    <fieldset>
+
+                        <label for="name">Your Name</label>
+                        <input id="name" type="text" placeholder="Your Name">
+>>>>>>> e807c06b794c48d5e99bcae9a0062d504c5dbc96
 
                 <h2 class="content-head content-head-ribbon">At last my love has come along, my lonely days are over and life is like a song.</h>
                 <h1 class="content head content-head-ribbon"> - Etta James </h1>
@@ -267,13 +308,66 @@
                     tempor incididunt ut labore et dolore magna aliqua.
                 </p>
             </div>
-        </div>
+        </div> -->
+=======
+    <div id="ribbon3" class="ribbon l-box-lrg pure-g">
 
     </div>
 
-</div>
+    <div class="content" id="registry">
+        <h2 class="content-head is-center">Registry</h2>
 
+        <div class="pure-g">
 
+            <div class="l-box pure-u-1" id="registry-text">
+              <p>Coming Soon!</p>
+            </div>
+        </div>
+    </div>
+
+<script>
+  (function (window, document) {
+  var menu = document.getElementById('menu'),
+      WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
+
+  function toggleHorizontal() {
+      [].forEach.call(
+          document.getElementById('menu').querySelectorAll('.custom-can-transform'),
+          function(el){
+              el.classList.toggle('pure-menu-horizontal');
+          }
+      );
+  };
+
+  function toggleMenu() {
+      // set timeout so that the panel has a chance to roll up
+      // before the menu switches states
+      if (menu.classList.contains('open')) {
+          setTimeout(toggleHorizontal, 500);
+      }
+      else {
+          toggleHorizontal();
+      }
+      menu.classList.toggle('open');
+      document.getElementById('toggle').classList.toggle('x');
+  };
+>>>>>>> under-construction
+
+  function closeMenu() {
+      if (menu.classList.contains('open')) {
+          toggleMenu();
+      }
+  }
+
+  document.getElementById('toggle').addEventListener('click', function (e) {
+      toggleMenu();
+      e.preventDefault();
+  });
+
+  window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
+  })(this, this.document);
+
+  </script>
 
 
 </body>
