@@ -138,7 +138,7 @@ a.pure-button-primary {
 
 
        .custom-wrapper.open {
-           height: 22em;
+           height: 25em;
        }
 
        .custom-wrapper.open a.pure-menu-link {
@@ -379,7 +379,6 @@ a.pure-menu-link {
 
 #ribbon3 {
   background-image: url("../img/IMG_0436.jpg");
-  background-position: center 80%;
 }
 .party-pic {
   text-align: center;
@@ -406,9 +405,13 @@ h1.content-head.content-head-ribbon, h2.content-head.content-head-ribbon {
   border-radius: 50% !important;
 }
 
-#details, #ourstory, #theparty {
+#details, #ourstory, #theparty, #registry {
   width: 100%;
   min-height: 100vh;
+}
+
+#registry-text {
+  text-align: center;
 }
 
 #details-splash {
@@ -456,10 +459,9 @@ h1.content-head.content-head-ribbon, h2.content-head.content-head-ribbon {
   text-align: center;
 }
 
-#registry {
-  min-height: 50vh;
+.pure-g.party-section {
+  margin-top: 30px;
 }
-
 
 
 @media (min-width: 35.5em) {
